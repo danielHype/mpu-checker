@@ -267,8 +267,7 @@ export default function Home() {
                     <AccordionContent>
                       <div className="mt-4">
                         <label
-                          for="medium-range"
-                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                         >
                           Temperature - {temperature} - Increase temperature to
                           get more creative answers
@@ -280,13 +279,12 @@ export default function Home() {
                           max="1"
                           step="0.1"
                           value={temperature}
-                          onChange={(e) => setTemperature(e.target.value)}
+                          onChange={(e) => setTemperature(Number(e.target.value))}
                           className="w-full h-2 mb-6 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
                         ></input>
                       </div>
                       <div className="mt-4">
                         <label
-                          for="medium-range"
                           className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                         >
                           Max{' '}
@@ -309,14 +307,13 @@ export default function Home() {
                           max="4000"
                           step="1"
                           value={maxTokens}
-                          onChange={(e) => setMaxTokens(e.target.value)}
+                          onChange={(e) => setMaxTokens(Number(e.target.value))}
                           className="w-full h-2 mb-6 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
                         ></input>
                       </div>
                       <div className="mt-4">
-                        <label
-                          for="userInput"
-                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        <label                         
+                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                         >
                           Your Custom Input
                         </label>
@@ -338,8 +335,7 @@ export default function Home() {
                       </div>
                       <div className="mt-4">
                         <label
-                          for="medium-range"
-                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                         >
                           Pick Model
                         </label>
