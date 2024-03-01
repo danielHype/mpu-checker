@@ -45,6 +45,19 @@
   color: #6b7280;
 }
 
+.textareaSmall {
+  position: relative;
+  resize: none;
+  font-size: 0.875rem;
+  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+  width: 75vw;
+  border-radius: 0.5rem;
+  border: 1px solid #d9d9e3;
+  background: #ffffff;
+  color: #000;
+  outline: none;
+}
+
 .generatebutton {
   position: absolute;
   top: 0.87rem;

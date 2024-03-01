@@ -1,7 +1,7 @@
 import { PDFLoader } from 'langchain/document_loaders/fs/pdf';
 
 // Replace with the path to a test PDF file
-const testFilePath = '/Users/daniel/HeyMPU/code/pdf-chatbot/gpt4-pdf-chatbot-langchain/docs/MPU-buch-1.pdf';
+const testFilePath = '/Users/daniel/HeyMPU/code/pdf-chatbot/gpt4-pdf-chatbot-langchain/docs/MPU-Info.pdf';
 
 const testPDFLoader = async () => {
   try {
