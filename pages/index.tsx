@@ -267,7 +267,7 @@ export default function Home() {
                     <AccordionContent>
                       <div className="mt-4">
                         <label
-                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          className="block mb-2 text-sm font-medium text-gray-900"
                         >
                           Temperature - {temperature} - Increase temperature to
                           get more creative answers
@@ -285,7 +285,7 @@ export default function Home() {
                       </div>
                       <div className="mt-4">
                         <label
-                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          className="block mb-2 text-sm font-medium text-gray-900 "
                         >
                           Max{' '}
                           <u
@@ -313,7 +313,7 @@ export default function Home() {
                       </div>
                       <div className="mt-4">
                         <label                         
-                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          className="block mb-2 text-sm font-medium text-gray-900"
                         >
                           Your Custom Input
                         </label>
@@ -335,7 +335,7 @@ export default function Home() {
                       </div>
                       <div className="mt-4">
                         <label
-                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          className="block mb-2 text-sm font-medium text-gray-900"
                         >
                           Pick Model
                         </label>
