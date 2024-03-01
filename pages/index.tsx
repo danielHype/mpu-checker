@@ -22,7 +22,7 @@ export default function Home() {
   const [maxTokens, setMaxTokens] = useState<number>(400);
   const [aiModel, setAiModel] = useState<string>('gpt-3.5-turbo');
   const [customPrompt, setCustomPrompt] =
-    useState<string>('Custom Prompt here');
+    useState<string>('You are an MPU expert website copy writer. You only speak German and need to answer always in German. Please write a detailed article in response to the following question. The article should include an introduction, main content with detailed explanations, and a conclusion. Use the context provided as a reference.');
 
   const [messageState, setMessageState] = useState<{
     messages: Message[];
