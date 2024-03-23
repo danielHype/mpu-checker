@@ -11,7 +11,7 @@ const LoginComponent: React.FC = () => {
     e.preventDefault();
     // Perform validation if needed
 
-    if( username === "leon" && password === "5``3%}EiP89Q")
+    if( username === "auser" && password === "5``3%}EiP89Q")
     {
         login({ username, password });
     }
