@@ -13,6 +13,8 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { Tooltip } from 'react-tooltip';
+import { useAuth } from '@/context/AuthContext';
+import LoginComponent from '@/components/LoginComponent';
 
 export default function Home() {
   const [query, setQuery] = useState<string>('');
@@ -24,6 +26,7 @@ export default function Home() {
   const [customPrompt, setCustomPrompt] =
     useState<string>('You are an MPU expert website copy writer. You only speak German and need to answer always in German. Please write a detailed article in response to the following question. The article should include an introduction, main content with detailed explanations, and a conclusion. Use the context provided as a reference.');
 
+  const { user } = useAuth();
   const [messageState, setMessageState] = useState<{
     messages: Message[];
     pending?: string;
@@ -131,7 +134,13 @@ export default function Home() {
     }
   };
 
+  if (!user) {
+
+    return <LoginComponent />
+  }
   return (
+    <>
+     
     <Layout>
       <div className="mx-auto flex flex-col gap-4">
         <h1 className="text-2xl font-bold leading-[1.1] tracking-tighter text-center">
@@ -368,5 +377,6 @@ export default function Home() {
         </main>
       </div>
     </Layout>
+    </>
   );
 }
